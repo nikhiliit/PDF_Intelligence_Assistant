@@ -1,0 +1,159 @@
+2025-06-11 07:35:28,813 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:35:28,842 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:35:28,842 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:35:33,657 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:35:33,657 - rag_system.pipeline - ERROR - No PDF files found in ./docs
+2025-06-11 07:35:33,657 - __main__ - CRITICAL - Failed to initialize the RAG pipeline. Exiting.
+2025-06-11 07:36:25,140 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:36:25,190 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:36:25,190 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:36:30,165 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:36:30,165 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:36:30,166 - rag_system.indexing - INFO - Building new index from PDFs...
+2025-06-11 07:36:30,166 - rag_system.data_processing - INFO - Processing PDF: VIJAY MALLYA AND CONSORTIUM OF BANKS_ A DETAILED STUDY - VIJAY-MALLYA-AND-CONSORTIUM-OF-BANKS-A-DETAILED-STUDY.pdf
+2025-06-11 07:36:30,246 - rag_system.data_processing - INFO - Created 126 chunks from VIJAY MALLYA AND CONSORTIUM OF BANKS_ A DETAILED STUDY - VIJAY-MALLYA-AND-CONSORTIUM-OF-BANKS-A-DETAILED-STUDY.pdf
+2025-06-11 07:36:30,246 - rag_system.data_processing - INFO - Processing PDF: 22.pdf
+2025-06-11 07:36:30,303 - rag_system.data_processing - INFO - Created 80 chunks from 22.pdf
+2025-06-11 07:36:30,303 - rag_system.indexing - INFO - Creating embeddings for 206 chunks...
+2025-06-11 07:36:31,390 - rag_system.indexing - INFO - Creating BM25 index...
+2025-06-11 07:36:31,469 - rag_system.indexing - INFO - Cache saved successfully with key 18868da9db16f706fb70b33af81aca5d.
+2025-06-11 07:36:31,469 - rag_system.indexing - INFO - Index built and cached successfully. Total chunks: 206
+2025-06-11 07:36:31,469 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:36:38,992 - __main__ - ERROR - An unexpected error occurred in interactive mode: RetrievalResult.__init__() missing 1 required positional argument: 'dense_score'
+Traceback (most recent call last):
+  File "/home/nikhil/Downloads/RAGs/final/professional_rag_system/main.py", line 36, in run_interactive_mode
+    result = rag.query(question)
+  File "/home/nikhil/Downloads/RAGs/final/professional_rag_system/rag_system/pipeline.py", line 49, in query
+    retrieval_results = self.retriever.retrieve(question)
+  File "/home/nikhil/Downloads/RAGs/final/professional_rag_system/rag_system/retrieval.py", line 28, in retrieve
+    sparse_results = self._sparse_retrieval(query, config.TOP_K_RETRIEVAL)
+  File "/home/nikhil/Downloads/RAGs/final/professional_rag_system/rag_system/retrieval.py", line 53, in _sparse_retrieval
+    results = [
+  File "/home/nikhil/Downloads/RAGs/final/professional_rag_system/rag_system/retrieval.py", line 54, in <listcomp>
+    RetrievalResult(chunk=self.vector_store.chunks[idx], sparse_score=scores[idx], rank=i)
+TypeError: RetrievalResult.__init__() missing 1 required positional argument: 'dense_score'
+2025-06-11 07:38:07,726 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:38:07,756 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:38:07,757 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:38:12,268 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:38:12,269 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:38:12,271 - rag_system.indexing - INFO - Loaded 206 chunks from cache.
+2025-06-11 07:38:12,271 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:38:18,202 - rag_system.retrieval - INFO - Retrieved 0 relevant chunks for query.
+2025-06-11 07:38:34,120 - rag_system.retrieval - INFO - Retrieved 0 relevant chunks for query.
+2025-06-11 07:41:09,431 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:41:09,471 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:41:09,471 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:41:14,106 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:41:14,106 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:41:14,109 - rag_system.indexing - INFO - Loaded 206 chunks from cache.
+2025-06-11 07:41:14,109 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:41:23,474 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:41:48,900 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:42:12,052 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:42:33,104 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:46:52,620 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:46:52,656 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:46:52,656 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:46:56,821 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:46:56,821 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:46:56,821 - rag_system.indexing - INFO - Building new index from PDFs...
+2025-06-11 07:46:56,822 - rag_system.data_processing - INFO - Processing PDF: New_CV.pdf
+2025-06-11 07:46:56,835 - rag_system.data_processing - INFO - Created 8 chunks from New_CV.pdf
+2025-06-11 07:46:56,835 - rag_system.data_processing - INFO - Processing PDF: Satyam_Rajput_Resume.pdf
+2025-06-11 07:46:56,852 - rag_system.data_processing - INFO - Created 18 chunks from Satyam_Rajput_Resume.pdf
+2025-06-11 07:46:56,852 - rag_system.indexing - INFO - Creating embeddings for 26 chunks...
+2025-06-11 07:46:57,304 - rag_system.indexing - INFO - Creating BM25 index...
+2025-06-11 07:46:57,313 - rag_system.indexing - INFO - Cache saved successfully with key 593d6bc2ef82bc893103bef20d71ee95.
+2025-06-11 07:46:57,313 - rag_system.indexing - INFO - Index built and cached successfully. Total chunks: 26
+2025-06-11 07:46:57,313 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:48:21,756 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:48:33,098 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:48:38,067 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 07:48:43,432 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:48:49,568 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:48:57,296 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 07:49:05,189 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:49:08,631 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 07:53:48,623 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:53:48,663 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:53:48,663 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:53:53,546 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:53:53,546 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:53:53,548 - rag_system.indexing - INFO - Loaded 26 chunks from cache.
+2025-06-11 07:53:53,548 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:54:11,725 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 07:55:08,175 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:55:08,213 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:55:08,213 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:55:12,754 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:55:12,754 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:55:12,755 - rag_system.indexing - INFO - Building new index from PDFs...
+2025-06-11 07:55:12,755 - rag_system.data_processing - INFO - Processing PDF: Nikhil_Sharma_CV.pdf
+2025-06-11 07:55:12,786 - rag_system.data_processing - INFO - Created 8 chunks from Nikhil_Sharma_CV.pdf
+2025-06-11 07:55:12,786 - rag_system.data_processing - INFO - Processing PDF: Satyam_Rajput_Resume.pdf
+2025-06-11 07:55:12,796 - rag_system.data_processing - INFO - Created 18 chunks from Satyam_Rajput_Resume.pdf
+2025-06-11 07:55:12,796 - rag_system.indexing - INFO - Creating embeddings for 26 chunks...
+2025-06-11 07:55:13,246 - rag_system.indexing - INFO - Creating BM25 index...
+2025-06-11 07:55:13,257 - rag_system.indexing - INFO - Cache saved successfully with key d4ee305dbd0028f5a4f7c8e04ceeb69c.
+2025-06-11 07:55:13,257 - rag_system.indexing - INFO - Index built and cached successfully. Total chunks: 26
+2025-06-11 07:55:13,257 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:55:21,918 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:56:50,972 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:56:51,003 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:56:51,003 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:56:55,977 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:56:55,977 - rag_system.pipeline - ERROR - No PDF files found in ./docs
+2025-06-11 07:56:55,977 - __main__ - CRITICAL - Failed to initialize the RAG pipeline. Exiting.
+2025-06-11 07:57:37,316 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 07:57:37,355 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 07:57:37,355 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 07:57:42,136 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 07:57:42,136 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 07:57:42,136 - rag_system.indexing - INFO - Building new index from PDFs...
+2025-06-11 07:57:42,137 - rag_system.data_processing - INFO - Processing PDF: Nikhil_Resume.pdf
+2025-06-11 07:57:42,152 - rag_system.data_processing - INFO - Created 8 chunks from Nikhil_Resume.pdf
+2025-06-11 07:57:42,152 - rag_system.data_processing - INFO - Processing PDF: Satyam_Rajput_Resume.pdf
+2025-06-11 07:57:42,166 - rag_system.data_processing - INFO - Created 18 chunks from Satyam_Rajput_Resume.pdf
+2025-06-11 07:57:42,166 - rag_system.indexing - INFO - Creating embeddings for 26 chunks...
+2025-06-11 07:57:42,577 - rag_system.indexing - INFO - Creating BM25 index...
+2025-06-11 07:57:42,587 - rag_system.indexing - INFO - Cache saved successfully with key 5cfd005d9482e1e62af308f41313fd8d.
+2025-06-11 07:57:42,587 - rag_system.indexing - INFO - Index built and cached successfully. Total chunks: 26
+2025-06-11 07:57:42,587 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 07:57:57,690 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 07:58:19,535 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 07:59:04,712 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 08:02:54,532 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 08:02:54,567 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 08:02:54,567 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 08:02:59,238 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 08:02:59,238 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 08:02:59,240 - rag_system.indexing - INFO - Loaded 26 chunks from cache.
+2025-06-11 08:02:59,240 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 08:03:19,341 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 08:04:00,464 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 08:04:21,515 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 08:04:40,360 - rag_system.retrieval - INFO - Retrieved 4 relevant chunks for query.
+2025-06-11 08:04:45,846 - rag_system.retrieval - INFO - Retrieved 3 relevant chunks for query.
+2025-06-11 08:05:54,490 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 08:05:54,527 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 08:05:54,527 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 08:05:59,948 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 08:05:59,948 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 08:05:59,950 - rag_system.indexing - INFO - Loaded 26 chunks from cache.
+2025-06-11 08:05:59,950 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 08:06:17,444 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 08:06:35,488 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
+2025-06-11 08:07:05,859 - rag_system.retrieval - INFO - Retrieved 4 relevant chunks for query.
+2025-06-11 08:07:48,203 - rag_system.retrieval - INFO - Retrieved 2 relevant chunks for query.
+2025-06-11 08:08:27,292 - __main__ - INFO - 🚀 Optimized RAG System Starting...
+2025-06-11 08:08:27,324 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-06-11 08:08:27,324 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-06-11 08:08:32,049 - rag_system.pipeline - INFO - Initializing RAG pipeline...
+2025-06-11 08:08:32,049 - rag_system.pipeline - INFO - Found 2 PDF files.
+2025-06-11 08:08:32,050 - rag_system.indexing - INFO - Loaded 26 chunks from cache.
+2025-06-11 08:08:32,050 - rag_system.pipeline - INFO - RAG pipeline initialized successfully.
+2025-06-11 08:08:58,827 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 08:09:24,374 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 08:09:51,513 - rag_system.retrieval - INFO - Retrieved 5 relevant chunks for query.
+2025-06-11 08:10:32,195 - rag_system.retrieval - INFO - Retrieved 6 relevant chunks for query.
