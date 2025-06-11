@@ -77,6 +77,17 @@ Open `rag_system/config.py` and tweak to suit:
 | `TOP_K_RETRIEVAL`   | `5`                     | Chunks retrieved per modality              |
 | `USE_HYBRID_SEARCH` | `True`                  | Set `False` for dense-only search          |
 
+
+---
+
+## 🐳  Command Line Interface
+
+```bash
+python main.py
+```
+
+---
+
 ---
 
 ## 🐳  One-liner Docker (optional)
