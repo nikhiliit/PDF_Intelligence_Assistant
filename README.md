@@ -156,6 +156,9 @@ NLTK will auto-download tokenizers/stop-words at first run.
 
 ---
 
+![CI](https://github.com/<user>/<repo>/actions/workflows/ci.yml/badge.svg)
+
+
 ## 🙏  Contributing & Feedback
 
 If this project helps you, **please star the repo**, open issues, or submit PRs.
