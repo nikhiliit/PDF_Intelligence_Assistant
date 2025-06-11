@@ -1,6 +1,3 @@
-Here’s the entire **README.md** ready for copy-paste—everything in one block so you can grab it without scrolling around:
-
-````markdown
 # 🏗️  Modular Hybrid-RAG System
 
 A local-first Retrieval-Augmented Generation (RAG) stack that lets you **query your private PDFs with citations**.  
