@@ -10,6 +10,8 @@ It fuses **FAISS dense vectors** (BAAI bge-base-en-v1.5) with **BM25 sparse keyw
 ---
 
 [![▶️ Watch the demo here](https://drive.google.com/file/d/15Hn8Qtc29ybuslV1VgtdgXad4kQQthw4/view?usp=sharing)](https://drive.google.com/file/d/15Hn8Qtc29ybuslV1VgtdgXad4kQQthw4/view?usp=sharing)
+
+[View the Project PDF here](RAG_Project.pdf)
  
 
 ## ✨  Features
