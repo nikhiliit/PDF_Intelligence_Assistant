@@ -4,7 +4,7 @@ A local-first Retrieval-Augmented Generation (RAG) stack that lets you **query y
 It fuses **FAISS dense vectors** (BAAI bge-base-en-v1.5) with **BM25 sparse keywords**, then feeds the top chunks to an **Ollama-hosted LLM** (default: `llama3`) for answer generation.
 
 <p align="center">
-  <img src="docs/img/rag_architecture.png" width="550" alt="Architecture diagram"/>
+  <img src="flowchart.png" width="550" alt="Architecture diagram"/>
 </p>
 
 ---
