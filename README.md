@@ -80,7 +80,7 @@ Open `rag_system/config.py` and tweak to suit:
 
 ---
 
-## 🐳  Command Line Interface
+## Command Line Interface
 
 ```bash
 python main.py
