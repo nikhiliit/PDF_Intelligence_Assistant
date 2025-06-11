@@ -9,6 +9,9 @@ It fuses **FAISS dense vectors** (BAAI bge-base-en-v1.5) with **BM25 sparse keyw
 
 ---
 
+[![▶️ Watch the demo on here](https://drive.google.com/file/d/15Hn8Qtc29ybuslV1VgtdgXad4kQQthw4/view?usp=sharing)](https://drive.google.com/file/d/15Hn8Qtc29ybuslV1VgtdgXad4kQQthw4/view?usp=sharing)
+ 
+ 
 ## ✨  Features
 
 | Layer | Highlights |
