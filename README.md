@@ -146,14 +146,3 @@ If this project helps you, **please star the repo**, open issues, or submit PRs.
 And if you use it in your own work, **cite the project** so others can find it, and leave feedback so we can make it even better!
 
 ```
-
----
-
-### Copy instructions
-
-1. Click into the code block above.  
-2. Select all (`Ctrl/Cmd + A`) → copy.  
-3. Paste into a new `README.md` file in your repo root.  
-4. Add the `docs/img/rag_architecture.png` image (or update the path).  
-5. Commit + push—done!
-```
