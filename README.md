@@ -144,5 +144,3 @@ NLTK will auto-download tokenizers/stop-words at first run.
 
 If this project helps you, **please star the repo**, open issues, or submit PRs.
 And if you use it in your own work, **cite the project** so others can find it, and leave feedback so we can make it even better!
-
-```
